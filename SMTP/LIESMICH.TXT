@@ -1,0 +1,14 @@
+Alle Drei Dateien '*.att *.dat *.emo' müssen den gleichen Namen besitzen.
+Dieser Name wird als Parameter an das Programm 'email.exe' übergeben.
+In der Datei Test01.exe wird der Inhalt der einzelnen Dateien erläutert.
+
+Zum Beispiel
+"email.exe test01"
+"email test01"
+"email.exe terror"
+
+FALSCH:
+
+"email.exe /test01"
+"email.exe test01.dat"
+"email.exe /test01.dat"

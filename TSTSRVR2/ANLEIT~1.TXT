@@ -1,0 +1,106 @@
+Dieses Programmpaket ist zum Registrieren von Daten in einer Interbase Datenbank. Dabei werden Name, Vorname, Straße, Plz, Ort, Land, Firma und e-Mail abgefragt (tstsrver.exe) und gespeichert (write2db.exe). Dabei besteht die Möglichkeit, dass die Daten an eine e-Mail Adresse gesendet werden.
+Das erste Script gibt ein Formular zurück, auf dem einige Eingaben dynamisch sind, wie z.B. das Programm. Wichtig wird erst das zweite Programm, dass die Daten mit evtl. vorhandenen Daten aus der Datenbank vergleicht und anzeigt. Über ein Link gelangt man dann zu dem eigentlichen Script oder zur eigentlichen Homepage.
+
+Die 5 Installationsschritte:
+
+1. Kopieren der Dateien:
+	* tstsrver.exe
+	* tstsrver.ini
+	* write2db.exe
+	* write2db.ini
+in das CGI-BIN Verzeichnis des Web-Servers
+(z.B. c:\sambar\cgi-bin )
+
+Die Dateien können umbenannt werden, sofern auch ihre INI-Datei gleichnamig umbenannt wird.
+z.B.	tstsrver.ini -> regist.ini
+	tstsrver.exe -> regist.exe
+	write2db.ini -> write.ini
+	write2db.exe -> write.exe
+
+2. Kopieren der zusätzlichen Dateien:
+	* countrys.txt
+	* index.html
+	* showinfo.html
+	* email.exe
+	* tstsrver.gdb
+in ein Verzeichnis.
+
+(z.B. c:\inetdata )
+
+3. Einstellungen in der "regist.ini":
+In dieser INI-Datei müssen alle Eintragungen gemacht werden, auch wenn diese redundant sind.
+
+program=Delphi
+script=194.25.63.89/cgi-bin/write?
+countryfile=c\inetdata\countrys.txt
+htmlfile=c:\inetdata\index.html
+
+
+program:
+Name des Programms auf den Testserver.
+
+script:
+Gibt die URL des verarbeitenden Scripts an.
+
+countryfile:
+In den Formular ist ein Feld, in dem die sich registrierende Person das Land angibt. Diese Länder werden dynamisch eingefügt und stehen in einer externen Datei.
+
+htmlfile:
+Die HTML-Datei ist eine externe Datei, damit sie jederzeit geändert werden kann. hmtlfile ist ein verweis auf die Datei.
+
+
+4. Einstellung in der write.ini:
+In dieser INI.Datei müssen alle Eintragungen gemacht werden, auch wenn
+diese redundant sind. (K.A. eintragen!)
+
+programm=Delphi 3
+fileexecute=c:\inetdata\email.exe c:\inetdata\delphi3	
+autoexecute=yes
+savetofile=yes
+savefile=c:\inetdata\delphi3 
+mailserver=194.25.63.100
+toemail=tutti@frutti.com
+htmlfile=c:\inetdata\shownifo.html
+dbname=c\inetdata\tstsrver.gdb
+serverhtml=http://www.garmhausen.de
+maxvisit=3
+
+
+program:
+Name des Programms, für das dieses registrieren ist
+
+fileexecute:
+Gibt die Datei an, die nach dem Registrieren eines neuen Gastes aufgerufen wird. Evtl. Parameter nicht vergessen.
+
+autoexecute:
+‚yes' oder ‚no'. Hängt davon ab, ob die Datei fileexecute ausgeführt wird.
+
+savetofile:
+‚yes' oder ‚no'. Hängt davon ab, die die Registrierungsdaten gespeichert werden oder nicht. (Format siehe e-Mail.txt).
+
+savefile:
+Gibt die Datei (ohne Extention) an, in der die Daten gespeichert werden. Erstellt:	* savefile.dat
+* savefile.att
+* savefile.emo
+
+serverhtml:
+Ist die URL der Zielhomepage oder des Zielscripts.
+
+dbname:
+Name der Interbase Datenbank, in der die Daten gespeichert werden.
+
+maxvisit:
+Wenn die Anzahl der Besuche durch diese Zahl teilbar ist, dann wird auch eine e-Mail geschickt.
+
+mailserver:
+IP-Adresse der Mail-Servers (beim Verschicken von Post)
+
+toemail:
+Empfänder der e-Mails
+
+htmlfile:
+Die HTML-Datei ist eine externe Datei, damit sie jederzeit geändert werden kann. 
+hmtlfile ist ein Verweis auf die Datei.
+
+
+5. Testen!!!

@@ -1,0 +1,5 @@
+192.168.2.243		// SMTP-Server	
+smtp			// Protokoll
+thomasl@garmhausen.de	// From
+lotus5@garmhausen.de	// To
+thomasl@ley		// Subject

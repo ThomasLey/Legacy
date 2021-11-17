@@ -1,0 +1,4 @@
+program=Kill your PC
+script=write2db.exe?
+countryfile=countrys.txt
+htmlfile=index.html

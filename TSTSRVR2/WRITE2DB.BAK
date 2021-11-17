@@ -1,0 +1,11 @@
+program=Tralala 1.egal
+autoexecute=yes
+fileexecute=email.exe
+mailserver=194.25.63.100
+toemail=lotus5@garmhausen.de
+savetofile=yes
+savefile=test0001
+htmlfile=showinfo.html
+dbname=tstsrver.gdb
+serverhtml=http://www.spd.de
+maxvisit=3

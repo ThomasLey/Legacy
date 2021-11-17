@@ -1,0 +1,54 @@
+Dieses Programmpacket ist zum Registrieren von Daten in einer
+Interbase Datenbank. Dabei werden Name, Vorname, Strasse, Plz,
+Ort, Land, Firma und e-Mail abgefragt und gespeichert. Dabei
+besteht die M”glichkeit, dass die Daten an eine e-Mail Adresse
+gesendet werden.
+Das erste Script gibt ein Formular zurck, auf dem einige
+Eingaben dynamisch sind, wie z.B. das Programm. Wichtig wird
+erst das zweite Programm, dass die Daten mit evtl. vorhandenen
+Daten aus der Datenbank vergleicht und anzeigt. Dabei ist ein Link
+zu der eigentlichen Homepage oder zu einem Script. Dieses ist abh„ngig
+von Autor.
+
+Die 5 Installationsschritte:
+
+1. Kopieren der Dateien:
+	* write2db.exe
+	* write2db.ini
+	* tstsrver.exe
+	* tstsrver.ini
+   in das CGI-BIN Verzeichnis ihres Web-Servers
+(z.B. c:\sambar\cgi-bin )
+
+Die Dateien k”nnen umbanannt werden, wenn auch ihre INI-Datei gleichnamig
+umbenannt wird.
+z.B.	tstsrver.ini -> regist.ini
+	tstsrver.exe -> regist.exe
+	write2db.ini -> write.ini
+	write2db.exe -> write.exe
+
+2. Kopieren der zus„tzlichen Dateien:
+	* countrys.txt
+	* index.html
+	* showinfo.html
+	* email.exe
+	* tstsrver.gdb
+
+   in ein Verzeichnis.
+
+(z.B. c:\inetdata )
+
+3. Einstellungen in der regist.ini:
+In dieser INI-Datei mssen alle eintr„ge gemacht werden, auch wenn
+diese redundant sind.
+
+program=Delphi 3                    -> Name der Programms auf den Testserver
+script=194.25.63.89/cgi-bin/write?  -> Verarbeitende Script
+countryfile=c\inetdata\countrys.txt -> Datei, in dem die zur Auswahl stehenden
+					L„nder stehen
+htmlfile=c:\inetdata\index.html	    -> Datei mit der HMTL-Datei, in der die
+					eigenen Tag's nur ersetzt werden mssen
+
+
+4. Einstellung in der write.ini:
+In dieser INI.Datei mssen alle Eintragungen gemacht werden, auch

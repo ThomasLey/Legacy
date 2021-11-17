@@ -1,0 +1,82 @@
+Dieses Programmpacket ist zum Registrieren von Daten in einer
+Interbase Datenbank. Dabei werden Name, Vorname, Strasse, Plz,
+Ort, Land, Firma und e-Mail abgefragt und gespeichert. Dabei
+besteht die M”glichkeit, dass die Daten an eine e-Mail Adresse
+gesendet werden.
+Das erste Script gibt ein Formular zurck, auf dem einige
+Eingaben dynamisch sind, wie z.B. das Programm. Wichtig wird
+erst das zweite Programm, dass die Daten mit evtl. vorhandenen
+Daten aus der Datenbank vergleicht und anzeigt. Dabei ist ein Link
+zu der eigentlichen Homepage oder zu einem Script. Dieses ist abh„ngig
+von Autor.
+
+Die 5 Installationsschritte:
+
+1. Kopieren der Dateien:
+	* write2db.exe
+	* write2db.ini
+	* tstsrver.exe
+	* tstsrver.ini
+   in das CGI-BIN Verzeichnis ihres Web-Servers
+(z.B. c:\sambar\cgi-bin )
+
+Die Dateien k”nnen umbanannt werden, wenn auch ihre INI-Datei gleichnamig
+umbenannt wird.
+z.B.	tstsrver.ini -> regist.ini
+	tstsrver.exe -> regist.exe
+	write2db.ini -> write.ini
+	write2db.exe -> write.exe
+
+2. Kopieren der zus„tzlichen Dateien:
+	* countrys.txt
+	* index.html
+	* showinfo.html
+	* email.exe
+	* tstsrver.gdb
+
+   in ein Verzeichnis.
+
+(z.B. c:\inetdata )
+
+3. Einstellungen in der regist.ini:
+In dieser INI-Datei mssen alle Eintragungen gemacht werden, auch wenn
+diese redundant sind.
+
+program=Delphi 3                    -> Name der Programms auf den Testserver
+script=194.25.63.89/cgi-bin/write?  -> Verarbeitende Script
+countryfile=c\inetdata\countrys.txt -> Datei, in dem die zur Auswahl stehenden
+					L„nder stehen
+htmlfile=c:\inetdata\index.html	    -> Datei mit der HMTL-Datei, in der die
+					eigenen Tag's nur ersetzt werden mssen
+
+
+4. Einstellung in der write.ini:
+In dieser INI.Datei mssen alle Eintragungen gemacht werden, auch wenn
+diese redundant sind. (K.A. eintragen!)
+
+programm=Delphi 3		-> s.o.
+fileexecute=c:\inetdata\email.exe -> Programm, das bei einer neu registrierten
+					Person gestartet wird.
+autoexecute=yes			-> 'yes' oder 'no'. Ob das Programm ausgefhrt wird.
+savetofile=yes			-> 'yes' oder 'no'. Ob die Daten in einer Datei gespeichet werden
+savefile=c:\inetdata\delphi3	-> Es werden drei Dateien angelegt, die das Programm e-Mail ben”tigt.
+					Siehe: email.txt
+mailserver=194.25.63.100	-> Mailserver-Protokoll: SMTP
+toemail=tutti@frutti.com	-> Adresse, an die die Mail geschickt werden
+htmlfile=c:\inetdata\shownifo.html -> s.o.
+dbname=c\inetdata\tstsrver.gdb	-> Interbasedatenbank in der die Daten gespeichert werden
+serverhtml=http://garmhausen.de -> Eigentliche Homepage oder Script
+maxvisit=3			-> Alle 3 Besuche wird eine weitere e-Mail abgeschickt.
+
+
+5. Testen!!!
+
+
+
+
+******
+Das Programm tstsrver.exe gibt das Formular aus und das Programm write2db.exe speichert diese Daten.
+******
+Dieses Programm kann auch die Registrierung fr eine Download-Page sein
+oder jmd. mit e-Mails nerven.
+******
