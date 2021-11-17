@@ -1,0 +1,25 @@
+unit uniMain;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  OleCtrls, SHDocVw;
+
+type
+  TForm1 = class(TForm)
+    WebBrowser1: TWebBrowser;
+  private
+    { Private-Deklarationen }
+  public
+    { Public-Deklarationen }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.DFM}
+
+end.

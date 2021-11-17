@@ -1,0 +1,25 @@
+
+ Ejemplos de mapas de luz (lightmaps) para DirectX 8
+ -----------------------------------------------------------------
+ por Lord Trancos.
+
+ Sample X5 - Usar mapas de luz.
+             Muestra como cargar y usar un mapa de luz
+             precalculado.
+ 
+ Sample X6 - Generar mapas de luz.
+             Muestra como calcular un mapa de luz usando
+             putos de luz y luces focales.
+             (sin proyección de sombras).
+
+ -----------------------------------------------------------------
+
+ Estos ejemplos han sido desarrollados bajo Delphi 4 + cabeceras
+ de DirectX 8 de DELPHI-JEDI (http://www.delphi-jedi.org/DelphiGraphics/).
+ La libreria D3DX8ab.dll se encuentra junto estas cabeceras.
+
+ -------------------------------------------------------------
+ Visita y colabora con "DX Lab" --> (www.geocities.com/dxlab/)
+ -------------------------------------------------------------
+
+ 2001/03/18, Lord Trancos. <lordtrancos@softhome.net>

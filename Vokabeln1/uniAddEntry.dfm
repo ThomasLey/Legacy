@@ -1,0 +1,229 @@
+object frmAddEntry: TfrmAddEntry
+  Left = 806
+  Top = 580
+  BorderStyle = bsSingle
+  Caption = 'Vokabeln hinzufügen'
+  ClientHeight = 176
+  ClientWidth = 328
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 313
+    Height = 129
+    Caption = 'neue Vokabel'
+    TabOrder = 0
+    object Label3: TLabel
+      Left = 6
+      Top = 26
+      Width = 57
+      Height = 17
+      AutoSize = False
+      Caption = 'Sprache 1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 6
+      Top = 50
+      Width = 57
+      Height = 17
+      AutoSize = False
+      Caption = 'zus. Spr. 1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 6
+      Top = 74
+      Width = 57
+      Height = 17
+      AutoSize = False
+      Caption = 'Sprache 2'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 6
+      Top = 98
+      Width = 57
+      Height = 17
+      AutoSize = False
+      Caption = 'zus. Spr. 2'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Edit1: TEdit
+      Left = 64
+      Top = 24
+      Width = 245
+      Height = 21
+      Hint = 'Wort in der 1. Sprache'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      Text = 'Edit1'
+    end
+    object Edit2: TEdit
+      Left = 64
+      Top = 48
+      Width = 245
+      Height = 21
+      Hint = 'Ergänzungen zum Wort der 1. Sprache'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      Text = 'Edit1'
+    end
+    object Edit3: TEdit
+      Left = 64
+      Top = 72
+      Width = 245
+      Height = 21
+      Hint = 'Wort in der 2. Sprache'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      Text = 'Edit1'
+    end
+    object Edit4: TEdit
+      Left = 64
+      Top = 96
+      Width = 245
+      Height = 21
+      Hint = 'Ergänzungen zum Wort in der 2. Sprache'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+      Text = 'Edit1'
+    end
+  end
+  object BitBtn1: TBitBtn
+    Left = 232
+    Top = 144
+    Width = 89
+    Height = 25
+    Caption = '&OK'
+    TabOrder = 2
+    OnClick = BitBtn1Click
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+      555555555555555555555555555555555555555555FF55555555555559055555
+      55555555577FF5555555555599905555555555557777F5555555555599905555
+      555555557777FF5555555559999905555555555777777F555555559999990555
+      5555557777777FF5555557990599905555555777757777F55555790555599055
+      55557775555777FF5555555555599905555555555557777F5555555555559905
+      555555555555777FF5555555555559905555555555555777FF55555555555579
+      05555555555555777FF5555555555557905555555555555777FF555555555555
+      5990555555555555577755555555555555555555555555555555}
+    NumGlyphs = 2
+  end
+  object BitBtn2: TBitBtn
+    Left = 40
+    Top = 144
+    Width = 89
+    Height = 25
+    Caption = '&Abbrechen'
+    TabOrder = 3
+    OnClick = BitBtn2Click
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000130B0000130B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333FFFFF3333333333999993333333333F77777FFF333333999999999
+      3333333777333777FF3333993333339993333377FF3333377FF3399993333339
+      993337777FF3333377F3393999333333993337F777FF333337FF993399933333
+      399377F3777FF333377F993339993333399377F33777FF33377F993333999333
+      399377F333777FF3377F993333399933399377F3333777FF377F993333339993
+      399377FF3333777FF7733993333339993933373FF3333777F7F3399933333399
+      99333773FF3333777733339993333339933333773FFFFFF77333333999999999
+      3333333777333777333333333999993333333333377777333333}
+    NumGlyphs = 2
+  end
+  object BitBtn3: TBitBtn
+    Left = 136
+    Top = 144
+    Width = 89
+    Height = 25
+    Caption = '&weiter'
+    TabOrder = 1
+    OnClick = BitBtn3Click
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+      555555555555555555555555555555555555555555FF55555555555559055555
+      55555555577FF5555555555599905555555555557777F5555555555599905555
+      555555557777FF5555555559999905555555555777777F555555559999990555
+      5555557777777FF5555557990599905555555777757777F55555790555599055
+      55557775555777FF5555555555599905555555555557777F5555555555559905
+      555555555555777FF5555555555559905555555555555777FF55555555555579
+      05555555555555777FF5555555555557905555555555555777FF555555555555
+      5990555555555555577755555555555555555555555555555555}
+    NumGlyphs = 2
+  end
+  object CheckBox3: TCheckBox
+    Left = 8
+    Top = 176
+    Width = 313
+    Height = 17
+    Caption = 'Dialogbox immer im Vordergrund'
+    Checked = True
+    State = cbChecked
+    TabOrder = 4
+    Visible = False
+  end
+  object BitBtn4: TBitBtn
+    Left = 8
+    Top = 144
+    Width = 25
+    Height = 25
+    TabOrder = 5
+    OnClick = BitBtn4Click
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      333333333333FF3333333333333C0C333333333333F777F3333333333CC0F0C3
+      333333333777377F33333333C30F0F0C333333337F737377F333333C00FFF0F0
+      C33333F7773337377F333CC0FFFFFF0F0C3337773F33337377F3C30F0FFFFFF0
+      F0C37F7373F33337377F00FFF0FFFFFF0F0C7733373F333373770FFFFF0FFFFF
+      F0F073F33373F333373730FFFFF0FFFFFF03373F33373F333F73330FFFFF0FFF
+      00333373F33373FF77333330FFFFF000333333373F333777333333330FFF0333
+      3333333373FF7333333333333000333333333333377733333333333333333333
+      3333333333333333333333333333333333333333333333333333}
+    NumGlyphs = 2
+  end
+end

@@ -1,0 +1,17 @@
+unit uniStruc;
+
+interface
+uses classes;
+
+type TAudioCD = record
+         CDID,
+         Interpret,
+         Album,
+         Lieder       : String;
+         Stuecke      : Integer;
+     end;
+
+implementation
+
+end.
+ 

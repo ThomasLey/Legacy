@@ -1,0 +1,51 @@
+package myPackage;
+
+{$R *.RES}
+{$R '\\su000\ley\_2 Delphi\_Refac\WSocket.dcr'}
+{$R '\\su000\ley\_2 Delphi\_Refac\CoolTrayIcon.dcr'}
+{$R '\\su000\ley\_2 Delphi\_Refac\Digit.dcr'}
+{$R '\\su000\ley\_2 Delphi\_Refac\GProgress.dcr'}
+{$R '\\su000\ley\_2 Delphi\_Refac\Wait.dcr'}
+{$R '\\su000\ley\_2 Delphi\_Refac\Black_System.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl50;
+
+contains
+  WSocket in '\\su000\ley\_2 Delphi\_Refac\WSocket.pas',
+  CoolTrayIcon in '\\su000\ley\_2 Delphi\_Refac\CoolTrayIcon.pas',
+  digit in '\\su000\ley\_2 Delphi\_Refac\Digit.pas',
+  GProgress in '\\su000\ley\_2 Delphi\_Refac\GProgress.pas',
+  LCD_Lab in '\\su000\ley\_2 Delphi\_Refac\Lcd_lab.pas',
+  LCD_Ped in '\\su000\ley\_2 Delphi\_Refac\LCD_Ped.pas',
+  Matrix in '\\su000\ley\_2 Delphi\_Refac\Matrix.pas',
+  uLIRCSocket in '\\su000\ley\_2 Delphi\_Refac\uLIRCSocket.pas' {LIRCSocketForm},
+  Wait in '\\su000\ley\_2 Delphi\_Refac\Wait.pas',
+  WSockbuf in '\\su000\ley\_2 Delphi\_Refac\WSockbuf.pas',
+  Black_System in '\\su000\ley\_2 Delphi\_Refac\Black_System.pas',
+  rrColors in '\\su000\ley\_2 Delphi\_Refac\rrColors.pas',
+  OvalBtn in '\\su000\ley\_2 Delphi\_Refac\OvalBtn.pas';
+
+end.

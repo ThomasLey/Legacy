@@ -1,0 +1,27 @@
+Auto Logon 1.0
+**************
+
+Auto Logon bietet die M”glichkeit, einen Benutzer automatisch anzumelden. Dazu
+mssen in der Registry drei Werte gesetzt werden.
+
+Um die Werte zu erstellen, mssen die folgenden Parameter bergeben werden:
+        autologon.exe /n [Benutzer] [Password]
+
+Da die Registry auch ber das Netz eingesehen werden kann, sollte dieses Tool
+vorsichtig eingesetzt werden, denn das Password kann wird unverschlsselt
+gespeichert.
+
+
+Das automatische Anmelden kann ber den Parameter /f ausgeschaltet werden, d.H:
+        autologon.exe /f
+
+
+
+
+
+
+
+Fragen und Verbesserungsvorschl„ge an:
+
+Thomas Ley
+tley@gmx.de

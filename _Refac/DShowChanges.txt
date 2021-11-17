@@ -1,0 +1,68 @@
+  HISTORY
+  =======
+  24-feb-2001:
+     - TPhysicalConnectorType corrected.
+     - IMediaEvent, IMediaControl and IAMovie have been corrected
+       for use of "mstimeout := INFINITE" in some functions.
+  27-feb-2001:
+     - IAMCrossbar.get_CrossbarPinInfo modified to use TPhysicalConnectorType
+     - IAMStreamConfig, IMediaSample2 and IDvdInfo2 corrected.
+     - IDVEnc now use ByteBool instead of byte
+  20-Mar-2001:
+     - EC_WMT_EVENT_BASE, EC_WMT_INDEX_EVENT added
+     - IDvdInfo2.GetDVDTextStringAsUnicode corrected
+     - IEnumMediaTypes.Next corrected
+  08-Apr-2001:
+     - IAMTimelineGroup.SetMediaType corrected with PAM_MEDIA_TYPE
+     - ISampleGrabber.SetMediaType corrected with PAM_MEDIA_TYPE
+       ISampleGrabber.GetConnectedMediaType corrected with PAM_MEDIA_TYPE
+  16-Apr-2001:
+     - IDVDInfo2.GetDVDDirectory correctted
+  04-May-2001:
+     - CDEF_MERIT_ABOVE_DO_NOT_USE added
+  09-May-2001:
+     - IPin.Connect Borland Compliant.
+           .ConnectionMediaType corrected.
+     - IEnumPins.Next Borland Compliant.
+     - IEnumMediaTypes.Next Borland Compliant.
+     - IEnumFilters.Next Borland Compliant.
+     - IMediaSeeking.SetPositions now use Int64;
+     - IFileSourceFilter.Load corrected.
+     - IGraphBuilder.SetLogFile now use THandle.
+     - IFilterGraph2.RenderEx Borland Compliant.
+     - IAsyncReader.SyncRead corrected.
+     - IPinConnection.NotifyEndOfStream now use THandle.
+     - IGraphConfig.Reconnect now use THandle.
+                   .Reconfigure now use THandle.
+     - IMultiMediaStream.GetInformation Borland Compliant.
+                        .GetEndOfStreamEventHandle now use THandle.
+     - IMediaStream.GetInformation Borland Compliant.
+     - IStreamSample.GetMediaStream corrected.
+                    .SetSampleTimes corrected.
+                    .Update now use THandle.
+     - IAMMultiMediaStream.AddMediaStream corrected.
+     - IAMMediaStream.Initialize corrected.
+     - IMediaStreamFilter.GetMediaStream corrected.
+     - PVideoInfoHeader added.
+     - PVIDEOINFOHEADER2 added.
+     - ISampleGrabberCB.BufferCB corrected.
+     - ISampleGrabber.SetMediaType Borland Compliant.
+                     .GetConnectedMediaType Borland Compliant.
+                     .GetCurrentBuffer corrected;
+       (Thank to Wayne Sherman)
+  11-May-2001:
+      - MS_S_PENDING, MS_S_NOUPDATE, MS_S_ENDOFSTREAM, MS_E_SAMPLEALLOC,
+        MS_E_PURPOSEID, MS_E_NOSTREAM,  MS_E_NOSEEKING, MS_E_INCOMPATIBLE,
+        MS_E_BUSY, MS_E_NOTINIT, MS_E_SOURCEALREADYDEFINED, MS_E_INVALIDSTREAMTYPE,
+        MS_E_NOTRUNNING corrected. (thank to Bógáncs Sándor)
+  14-May-2001:
+      - DMO functions corrected
+      - IMediaObject corrected
+  03-Jun-2001:
+      - IAMVideoProcAmp.GetRange corrected (thank to Bobby)
+  25-jun-2001:
+      - TMediaObjectImpl added
+      - TDMO_OUTPUT_DATA_BUFFER_array added
+      - IMediaObject.ProcessOutput corrected
+      - IMediaBuffer.GetBufferAndLength corrected
+        (special thanks to Alexey Barkovoy for this updates ;-).

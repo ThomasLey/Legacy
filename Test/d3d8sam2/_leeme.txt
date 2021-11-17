@@ -1,0 +1,21 @@
+
+ Microsoft DirectX 8 SDK Tutorial 6 adaptado a Delphi,
+ mas un ejemplo extra basado en el ejemplo Clip Mirror del MS DX 8 SDK.
+ ----------------------------------------------------------------------
+ por Lord Trancos.
+
+ Tutorial 6 - Cargar archivos X.
+
+ Tutorial X4 - Clip Mirror (Espejo). 
+
+ ---------------------------------------------
+
+ Estos ejemplos han sido desarrollados bajo Delphi 4 + cabeceras
+ de DirectX 8 de DELPHI-JEDI (http://www.delphi-jedi.org/DelphiGraphics/).
+ La libreria D3DX8ab.dll se encuentra junto estas cabeceras.
+
+ -------------------------------------------------------------
+ Visita y colabora con "DX Lab" --> (www.geocities.com/dxlab/)
+ -------------------------------------------------------------
+
+ 2001/03/01, Lord Trancos. <lordtrancos@softhome.net>
